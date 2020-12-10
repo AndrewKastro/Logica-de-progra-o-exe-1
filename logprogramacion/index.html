@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica de programação exercicio 1</title>
+
+    <script>
+        let maça = "vermelha"
+        let uva = "roxa"
+        let banana = "amarela"
+        let melancia = "verde com rosa"
+        let tanjerina = "laranja"
+        let limao = "verde";
+
+        //para codificar é preciso escrever codificacao()
+
+        function codificacao() {
+            let acodificacao = prompt("escreva o texto para acoficar").split(",")
+            cantidad = acodificacao.length
+            for (let au = 0; au < cantidad; au++) {
+                switch (acodificacao[au]) {
+                    case "hola": acodificacao[au] = maça; break
+                    case "tudo bem": acodificacao[au] = uva; break
+                    case "o dia esta quente": acodificacao[au] = banana; break
+                    case "tenha um bom dia": acodificacao[au] = melancia; break
+                    case "tchau": acodificacao[au] = tanjerina; break
+                    case "boa sorte": acodificacao[au] = limao; break
+                }
+
+            }
+            console.log(acodificacao.join(""))
+
+
+        }
+        //escreva decodificar()"
+        function decodificar() {
+            let decodificar = prompt("escreva texto para decodificar").split(",")
+
+            decodificar = decodificar.replaceAll('vermelha', 'maça');
+            decodificar = decodificar.replaceAll('roxa', 'uva');
+            decodificar = decodificar.replaceAll('amarela', 'banana');
+            decodificar = decodificar.replaceAll('verde com rosa', 'melancia');
+            decodificar = decodificar.replaceAll('laranja', 'tangerina');
+            decodificar = decodificar.replaceAll('verde', 'limao');
+            
+
+            console.log(decodificar);
+
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align:center;
+ padding-top: 8%;
+ font-family: cursive;
+ color: blueviolet;">
+        Codificação e Decodificação Andrea Kastro </h>
+</body>
+
+</html>
